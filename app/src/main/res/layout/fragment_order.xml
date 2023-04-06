@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/android:colorBackground"
+    tools:context=".ui.order.OrderFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gl_content_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/medium_125" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gl_content_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="@dimen/medium_125" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_patient"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_125"
+                android:hint="@string/patient"
+                app:errorEnabled="true"
+                app:layout_constraintBottom_toTopOf="@id/til_date"
+                app:layout_constraintEnd_toEndOf="@id/gl_content_end"
+                app:layout_constraintStart_toStartOf="@id/gl_content_start"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="spread_inside">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_patient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textNoSuggestions"
+                    android:singleLine="true"
+                    android:textAppearance="?attr/textAppearanceBodyLarge" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_date"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_200"
+                android:layout_marginEnd="@dimen/medium_100"
+                android:hint="@string/date"
+                app:endIconDrawable="@drawable/ic_calendar_outlined"
+                app:endIconMode="custom"
+                app:errorEnabled="true"
+                app:layout_constraintBottom_toTopOf="@id/til_clinic"
+                app:layout_constraintEnd_toStartOf="@id/til_time"
+                app:layout_constraintStart_toStartOf="@id/gl_content_start"
+                app:layout_constraintTop_toBottomOf="@id/til_patient">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="none|textNoSuggestions"
+                    android:singleLine="true"
+                    android:textAppearance="?attr/textAppearanceBodyLarge" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_time"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:hint="@string/time"
+                app:endIconDrawable="@drawable/ic_time_outlined"
+                app:endIconMode="custom"
+                app:errorEnabled="true"
+                app:layout_constraintBottom_toBottomOf="@id/til_date"
+                app:layout_constraintEnd_toEndOf="@id/gl_content_end"
+                app:layout_constraintStart_toEndOf="@id/til_date"
+                app:layout_constraintTop_toTopOf="@id/til_date">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="none|textNoSuggestions"
+                    android:singleLine="true"
+                    android:textAppearance="?attr/textAppearanceBodyLarge" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_clinic"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_200"
+                android:hint="@string/clinic"
+                app:errorEnabled="true"
+                app:layout_constraintBottom_toTopOf="@id/til_doctor"
+                app:layout_constraintEnd_toEndOf="@id/gl_content_end"
+                app:layout_constraintStart_toStartOf="@id/gl_content_start"
+                app:layout_constraintTop_toBottomOf="@id/til_date">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/et_clinic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textAppearance="?attr/textAppearanceBodyLarge" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_doctor"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_200"
+                android:hint="@string/doctor"
+                app:errorEnabled="true"
+                app:layout_constraintBottom_toTopOf="@id/til_price"
+                app:layout_constraintEnd_toEndOf="@id/gl_content_end"
+                app:layout_constraintStart_toStartOf="@id/gl_content_start"
+                app:layout_constraintTop_toBottomOf="@id/til_clinic">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/et_doctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textAppearance="?attr/textAppearanceBodyLarge" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_price"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_200"
+                android:hint="@string/price"
+                android:minWidth="@dimen/large_100"
+                app:errorEnabled="true"
+                app:layout_constraintBottom_toTopOf="@id/til_note"
+                app:layout_constraintEnd_toStartOf="@id/cb_paid"
+                app:layout_constraintStart_toStartOf="@id/gl_content_start"
+                app:layout_constraintTop_toBottomOf="@id/til_doctor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textAppearance="?attr/textAppearanceBodyLarge" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cb_paid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_100"
+                android:singleLine="true"
+                android:text="@string/is_paid"
+                android:textAppearance="?attr/textAppearanceBodyLarge"
+                app:layout_constraintBaseline_toBaselineOf="@id/til_price"
+                app:layout_constraintEnd_toEndOf="@id/gl_content_end"
+                app:layout_constraintStart_toEndOf="@id/til_price" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_note"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/small_200"
+                android:layout_marginBottom="@dimen/medium_125"
+                android:hint="@string/note"
+                android:minHeight="@dimen/large_125"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/gl_content_end"
+                app:layout_constraintHeight_min="@dimen/large_125"
+                app:layout_constraintStart_toStartOf="@id/gl_content_start"
+                app:layout_constraintTop_toBottomOf="@id/til_price">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="start"
+                    android:minLines="3"
+                    android:textAppearance="?attr/textAppearanceBodyLarge" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

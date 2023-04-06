@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.settings.hint.HintDialogFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/medium_125"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/small_200"
+        android:paddingBottom="@dimen/medium_125">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_hint"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint"
+            app:layout_constraintEnd_toEndOf="@id/gl_content_end"
+            app:layout_constraintStart_toStartOf="@id/gl_content_start"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="3" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <include
+            android:id="@+id/layout_dialog_actions"
+            layout="@layout/nested_dialog_actions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_125"
+            app:layout_constraintEnd_toEndOf="@id/gl_content_end"
+            app:layout_constraintStart_toStartOf="@id/gl_content_start"
+            app:layout_constraintTop_toBottomOf="@id/til_hint" />
+
+    </LinearLayout>
+</ScrollView>

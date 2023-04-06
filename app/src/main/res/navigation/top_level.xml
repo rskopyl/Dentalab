@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.rskopyl.dentalab.ui.home.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_orderFragment"
+            app:destination="@id/orderFragment"
+            app:enterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="com.rskopyl.dentalab.ui.order.OrderFragment"
+        android:label="@string/order"
+        tools:layout="@layout/fragment_order">
+        <argument
+            android:name="orderId"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_orderFragment_to_formulaFragment"
+            app:destination="@id/formulaFragment"
+            app:enterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <argument
+            android:name="epochDays"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/formulaFragment"
+        android:name="com.rskopyl.dentalab.ui.formula.FormulaFragment"
+        android:label="@string/formula"
+        tools:layout="@layout/fragment_formula">
+        <action
+            android:id="@+id/action_formulaFragment_to_modificationDialogFragment"
+            app:destination="@id/modificationDialogFragment"
+            app:enterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <argument
+            android:name="orderId"
+            app:argType="long" />
+    </fragment>
+    <dialog
+        android:id="@+id/modificationDialogFragment"
+        android:name="com.rskopyl.dentalab.ui.formula.modification.ModificationDialogFragment"
+        android:label="@string/modification"
+        tools:layout="@layout/dialog_modification">
+        <argument
+            android:name="orderId"
+            app:argType="long" />
+        <argument
+            android:name="position"
+            app:argType="integer" />
+    </dialog>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.rskopyl.dentalab.ui.settings.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_settingsFragment_to_structureDialogFragment"
+            app:destination="@id/structureDialogFragment"
+            app:enterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_settingsFragment_to_materialDialogFragment"
+            app:destination="@id/materialDialogFragment"
+            app:enterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_settingsFragment_to_hintDialogFragment"
+            app:destination="@id/hintDialogFragment"
+            app:enterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <dialog
+        android:id="@+id/structureDialogFragment"
+        android:name="com.rskopyl.dentalab.ui.settings.component.structure.StructureDialogFragment"
+        android:label="@string/structure"
+        tools:layout="@layout/dialog_structure">
+        <argument
+            android:name="structureId"
+            app:argType="long" />
+    </dialog>
+    <dialog
+        android:id="@+id/materialDialogFragment"
+        android:name="com.rskopyl.dentalab.ui.settings.component.material.MaterialDialogFragment"
+        android:label="@string/material"
+        tools:layout="@layout/dialog_material">
+        <argument
+            android:name="materialId"
+            app:argType="long" />
+    </dialog>
+    <dialog
+        android:id="@+id/hintDialogFragment"
+        android:name="com.rskopyl.dentalab.ui.settings.hint.HintDialogFragment"
+        android:label="@string/hint"
+        tools:layout="@layout/dialog_hint">
+        <argument
+            android:name="hintTarget"
+            app:argType="com.rskopyl.dentalab.data.model.Hint$Target" />
+        <argument
+            android:name="hintText"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </dialog>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.rskopyl.dentalab.ui.search.SearchFragment"
+        android:label="@string/search"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_searchFragment_to_orderFragment"
+            app:destination="@id/orderFragment"
+            app:enterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+</navigation>

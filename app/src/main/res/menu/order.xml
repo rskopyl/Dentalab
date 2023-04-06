@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mi_save"
+        android:icon="@drawable/ic_save_outlined"
+        android:title="@string/save"
+        app:iconTint="?attr/colorControlNormal"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/mi_formula"
+        android:icon="@drawable/ic_tooth_outlined"
+        android:title="@string/formula"
+        app:iconTint="?attr/colorControlNormal"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/mi_delete"
+        android:title="@string/delete"
+        app:iconTint="?attr/colorControlNormal"
+        app:showAsAction="never" />
+
+</menu>

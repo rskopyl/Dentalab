@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/android:colorBackground"
+    tools:context=".ui.settings.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/medium_125">
+
+        <TextView
+            style="@style/Widget.Dentalab.TextView.Section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/general" />
+
+        <LinearLayout
+            android:id="@+id/btn_home_period"
+            style="@style/Widget.Dentalab.Button.Settings"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/scaled_parameter"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Widget.Dentalab.TextView.Parameter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/home_period" />
+
+            <TextView
+                android:id="@+id/tv_home_period"
+                style="@style/Widget.Dentalab.TextView.Option"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/medium_200"
+                tools:text="@string/week" />
+
+        </LinearLayout>
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/switch_quick_navigation"
+            style="@style/Widget.Dentalab.MaterialSwitch.Settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quick_navigation" />
+
+        <TextView
+            style="@style/Widget.Dentalab.TextView.Section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_200"
+            android:text="@string/components" />
+
+        <Button
+            android:id="@+id/btn_structures"
+            style="@style/Widget.Dentalab.Button.Settings"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/scaled_parameter"
+            android:drawableEnd="@drawable/ic_arrow_filled"
+            android:text="@string/structures" />
+
+        <Button
+            android:id="@+id/btn_materials"
+            style="@style/Widget.Dentalab.Button.Settings"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/scaled_parameter"
+            android:drawableEnd="@drawable/ic_arrow_filled"
+            android:text="@string/materials" />
+
+        <TextView
+            style="@style/Widget.Dentalab.TextView.Section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_200"
+            android:text="@string/hints" />
+
+        <Button
+            android:id="@+id/btn_clinics"
+            style="@style/Widget.Dentalab.Button.Settings"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/scaled_parameter"
+            android:drawableEnd="@drawable/ic_arrow_filled"
+            android:text="@string/clinics" />
+
+        <Button
+            android:id="@+id/btn_doctors"
+            style="@style/Widget.Dentalab.Button.Settings"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/scaled_parameter"
+            android:drawableEnd="@drawable/ic_arrow_filled"
+            android:text="@string/doctors" />
+
+    </LinearLayout>
+</ScrollView>

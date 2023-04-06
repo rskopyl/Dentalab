@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TextView -->
+    <style name="Widget.Dentalab.TextView.Section" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">?attr/textAppearanceBodyMedium</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:lines">1</item>
+        <item name="android:textColor">?attr/colorOutline</item>
+        <item name="android:paddingStart">@dimen/medium_100</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="Widget.Dentalab.TextView.Parameter" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">?attr/textAppearanceBodyLarge</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="Widget.Dentalab.TextView.Option" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">?attr/textAppearanceBodyLarge</item>
+        <item name="android:textColor">?attr/colorOutline</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">end|center</item>
+    </style>
+
+    <style name="Widget.Dentalab.TextView.Dialog" parent="Widget.MaterialComponents.TextView">
+        <item name="android:padding">@dimen/small_100</item>
+        <item name="android:textAppearance">?attr/textAppearanceBodyMedium</item>
+        <item name="android:textColor">?attr/colorOnPrimaryContainer</item>
+    </style>
+
+    <!-- Button -->
+    <style name="Widget.Dentalab.Button.Settings" parent="Widget.Material3.Button">
+        <item name="android:gravity">start|center</item>
+        <item name="android:backgroundTint">?attr/colorSurface</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="drawableTint">?attr/colorOnSurface</item>
+        <item name="android:padding">@dimen/medium_100</item>
+        <item name="android:textAppearance">?attr/textAppearanceBodyLarge</item>
+    </style>
+
+    <!-- Switch -->
+    <style name="Widget.Dentalab.MaterialSwitch.Settings" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="android:backgroundTint">?attr/colorSurface</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:padding">@dimen/medium_100</item>
+        <item name="android:textAppearance">?attr/textAppearanceBodyLarge</item>
+    </style>
+
+    <!-- TextAppearance - Display -->
+    <style name="TextAppearance.Dentalab.DisplayLarge" parent="TextAppearance.Material3.DisplayLarge">
+        <item name="fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="TextAppearance.Dentalab.DisplayMedium" parent="TextAppearance.Material3.DisplayMedium">
+        <item name="fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="TextAppearance.Dentalab.DisplaySmall" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="fontFamily">@font/inter_regular</item>
+    </style>
+
+    <!-- TextAppearance - Headline -->
+    <style name="TextAppearance.Dentalab.HeadlineLarge" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="TextAppearance.Dentalab.HeadlineMedium" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="TextAppearance.Dentalab.HeadlineSmall" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="fontFamily">@font/inter_bold</item>
+    </style>
+
+    <!-- TextAppearance - Title -->
+    <style name="TextAppearance.Dentalab.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="TextAppearance.Dentalab.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="TextAppearance.Dentalab.TitleSmall" parent="TextAppearance.Material3.TitleSmall">
+        <item name="fontFamily">@font/inter_bold</item>
+    </style>
+
+    <!-- TextAppearance - Body -->
+    <style name="TextAppearance.Dentalab.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="TextAppearance.Dentalab.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="TextAppearance.Dentalab.BodySmall" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <!-- TextAppearance - Label -->
+    <style name="TextAppearance.Dentalab.LabelLarge" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="TextAppearance.Dentalab.LabelMedium" parent="TextAppearance.Material3.LabelMedium">
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="TextAppearance.Dentalab.LabelSmall" parent="TextAppearance.Material3.LabelSmall">
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+</resources>

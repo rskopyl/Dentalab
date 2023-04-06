@@ -1,0 +1,62 @@
+<resources>
+    <style name="Theme.Dentalab.Base" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Toolbar -->
+        <item name="windowActionModeOverlay">true</item>
+        <!-- TextAppearance - Display -->
+        <item name="textAppearanceDisplayLarge">@style/TextAppearance.Dentalab.DisplayLarge</item>
+        <item name="textAppearanceDisplayMedium">@style/TextAppearance.Dentalab.DisplayMedium</item>
+        <item name="textAppearanceDisplaySmall">@style/TextAppearance.Dentalab.DisplaySmall</item>
+        <!-- TextAppearance - Headline -->
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.Dentalab.HeadlineLarge</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.Dentalab.HeadlineMedium</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.Dentalab.HeadlineSmall</item>
+        <!-- TextAppearance - Title -->
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.Dentalab.TitleLarge</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.Dentalab.TitleMedium</item>
+        <item name="textAppearanceTitleSmall">@style/TextAppearance.Dentalab.TitleSmall</item>
+        <!-- TextAppearance - Body -->
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.Dentalab.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.Dentalab.BodyMedium</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.Dentalab.BodySmall</item>
+        <!-- TextAppearance - Label -->
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.Dentalab.LabelLarge</item>
+        <item name="textAppearanceLabelMedium">@style/TextAppearance.Dentalab.LabelMedium</item>
+        <item name="textAppearanceLabelSmall">@style/TextAppearance.Dentalab.LabelSmall</item>
+    </style>
+
+    <style name="Theme.Dentalab.DayNight" parent="Theme.Dentalab.Base">
+        <!-- Color - Primary -->
+        <item name="colorPrimary">@color/md_theme_light_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_light_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/md_theme_light_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_light_onPrimaryContainer</item>
+        <!-- Color - Secondary -->
+        <item name="colorSecondary">@color/md_theme_light_secondary</item>
+        <item name="colorOnSecondary">@color/md_theme_light_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/md_theme_light_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/md_theme_light_onSecondaryContainer</item>
+        <!-- Color - Tertiary -->
+        <item name="colorTertiary">@color/md_theme_light_tertiary</item>
+        <item name="colorOnTertiary">@color/md_theme_light_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/md_theme_light_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/md_theme_light_onTertiaryContainer</item>
+        <!-- Color - Error -->
+        <item name="colorError">@color/md_theme_light_error</item>
+        <item name="colorErrorContainer">@color/md_theme_light_errorContainer</item>
+        <item name="colorOnError">@color/md_theme_light_onError</item>
+        <item name="colorOnErrorContainer">@color/md_theme_light_onErrorContainer</item>
+        <!-- Color - Background -->
+        <item name="android:colorBackground">@color/md_theme_light_background</item>
+        <item name="colorOnBackground">@color/md_theme_light_onBackground</item>
+        <!-- Color - Surface -->
+        <item name="colorSurface">@color/md_theme_light_surface</item>
+        <item name="colorOnSurface">@color/md_theme_light_onSurface</item>
+        <item name="colorSurfaceVariant">@color/md_theme_light_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/md_theme_light_onSurfaceVariant</item>
+        <!-- Color - Outline & Inverse -->
+        <item name="colorOutline">@color/md_theme_light_outline</item>
+        <item name="colorOnSurfaceInverse">@color/md_theme_light_inverseOnSurface</item>
+        <item name="colorSurfaceInverse">@color/md_theme_light_inverseSurface</item>
+        <item name="colorPrimaryInverse">@color/md_theme_light_inversePrimary</item>
+    </style>
+</resources>

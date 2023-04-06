@@ -1,0 +1,82 @@
+<resources>
+    <!-- Shared -->
+    <string name="app_name" translatable="false">Dentalab</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="required">Required field</string>
+    <string name="select">Select</string>
+    <string name="ok">OK</string>
+
+    <!-- Home -->
+    <string name="home">Home</string>
+    <string name="pick_date">Pick date</string>
+    <string name="order_list_empty">Order list is empty</string>
+    <string name="create_order">Create order</string>
+
+    <!-- Order -->
+    <string name="order">Order</string>
+    <string name="patient">Patient</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="clinic">Clinic</string>
+    <string name="doctor">Doctor</string>
+    <string name="price">Price</string>
+    <string name="is_paid">Is paid</string>
+    <string name="note">Note</string>
+    <string name="save_order">Save order</string>
+    <string name="insufficient_price">Insufficient price</string>
+    <string name="order_saved">Order was saved</string>
+    <string name="order_deleted">Order was deleted</string>
+
+    <!-- Formula -->
+    <string name="formula">Formula</string>
+    <string name="linking_error">Linking Error</string>
+    <string name="linking_error_message">Some modifications of current formula contain components that no longer exists. To suppress this error consider updating or deleting unlinked modifications.</string>
+    <string name="formula_saved">Formula was saved</string>
+    <string name="tools">Tools</string>
+    <string name="copying">Copying</string>
+    <string name="eraser">Eraser</string>
+
+    <!-- Modification -->
+    <string name="modification">Modification</string>
+    <string name="structure">Structure</string>
+    <string name="material">Material</string>
+    <string name="insufficient_structure">Insufficient structure</string>
+    <string name="insufficient_material">Insufficient material</string>
+
+    <!-- Search -->
+    <string name="search">Search</string>
+    <string name="nothing_found">Nothing was found</string>
+
+    <!-- Settings -->
+    <string name="general">General</string>
+    <string name="home_period">Home Period</string>
+    <string name="quick_navigation">Quick navigation</string>
+    <string name="week">Week</string>
+    <string name="dekade">Dekade</string>
+    <string name="fortnight">Fortnight</string>
+    <string name="month">Month</string>
+    <string name="settings">Settings</string>
+    <string name="add_new">+ New</string>
+    <string name="components">Components</string>
+    <string name="structures">Structures</string>
+    <string name="materials">Materials</string>
+    <string name="hints">Hints</string>
+    <string name="clinics">Clinics</string>
+    <string name="doctors">Doctors</string>
+    <string name="name">Name</string>
+
+    <!-- Structure -->
+    <string name="symbol">Symbol</string>
+    <string name="single_character_only">Single character only</string>
+    <string name="invalid_symbol">Unacceptable symbol</string>
+
+    <!-- Type -->
+    <string name="color">Color</string>
+    <string name="hex_format">Hex format</string>
+    <string name="invalid_color">Unacceptable format</string>
+
+    <!-- Hint -->
+    <string name="hint">Hint</string>
+</resources>

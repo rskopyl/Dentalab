@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.formula.modification.ModificationDialogFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/medium_125">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_content_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/medium_125" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_content_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/medium_125" />
+
+        <FrameLayout
+            android:id="@+id/fl_modification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorSurface"
+            android:paddingVertical="@dimen/medium_200"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/ll_modification"
+                android:layout_width="@dimen/scaled_modification"
+                android:layout_height="@dimen/scaled_modification"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_corners_full"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:backgroundTint="#B3D1FF">
+
+                <TextView
+                    android:id="@+id/tv_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    android:textAppearance="?attr/textAppearanceTitleLarge"
+                    tools:text="1"
+                    tools:textColor="?attr/colorOnSurface" />
+
+                <TextView
+                    android:id="@+id/tv_symbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_bold_italic"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    android:textAppearance="?attr/textAppearanceTitleLarge"
+                    tools:text="S"
+                    tools:textColor="?attr/colorOnSurface" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_structure"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_125"
+            android:hint="@string/structure"
+            app:layout_constraintEnd_toEndOf="@id/gl_content_end"
+            app:layout_constraintStart_toStartOf="@id/gl_content_start"
+            app:layout_constraintTop_toBottomOf="@id/fl_modification">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/tv_structure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:textAppearance="?attr/textAppearanceBodyMedium" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_material"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_200"
+            android:hint="@string/material"
+            app:layout_constraintEnd_toEndOf="@id/til_structure"
+            app:layout_constraintStart_toStartOf="@id/til_structure"
+            app:layout_constraintTop_toBottomOf="@id/til_structure">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/tv_material"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="5"
+                android:textAppearance="?attr/textAppearanceBodyMedium" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <include
+            android:id="@+id/layout_dialog_actions"
+            layout="@layout/nested_dialog_actions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_125"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/gl_content_end"
+            app:layout_constraintStart_toStartOf="@id/gl_content_start"
+            app:layout_constraintTop_toBottomOf="@id/til_material" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Shared -->
+    <string name="save">ОК</string>
+    <string name="delete">Видалити</string>
+    <string name="cancel">Назад</string>
+    <string name="required">Обов\'язкове поле</string>
+    <string name="select">Обрати</string>
+    <string name="ok">ОК</string>
+
+    <!-- Home -->
+    <string name="home">Головна</string>
+    <string name="pick_date">Обрати дату</string>
+    <string name="order_list_empty">Замовлення відсутні</string>
+    <string name="create_order">Створити замовлення</string>
+
+    <!-- Order -->
+    <string name="order">Замовлення</string>
+    <string name="patient">Пацієнт</string>
+    <string name="date">Дата</string>
+    <string name="time">Час</string>
+    <string name="clinic">Клініка</string>
+    <string name="doctor">Лікар</string>
+    <string name="price">Ціна</string>
+    <string name="is_paid">Сплачено</string>
+    <string name="note">Примітка</string>
+    <string name="save_order">Зберегти замовлення</string>
+    <string name="insufficient_price">Недопустима ціна</string>
+    <string name="order_saved">Замовлення збережено</string>
+    <string name="order_deleted">Замовлення видалено</string>
+
+    <!-- Formula -->
+    <string name="formula">Формула</string>
+    <string name="linking_error">Помилка зв\'язування</string>
+    <string name="linking_error_message">Деякі модифікації з цієї формули містять компоненти, що більше не існують. Для усунення цієї помилки необхідно відредагувати або видалити незв\'язані модифікації.</string>
+    <string name="formula_saved">Формулу збережено</string>
+    <string name="tools">Інструменти</string>
+    <string name="copying">Копіювання</string>
+    <string name="eraser">Ластик</string>
+
+    <!-- Modification -->
+    <string name="modification">Модифікація</string>
+    <string name="structure">Структура</string>
+    <string name="material">Матеріал</string>
+    <string name="insufficient_structure">Структура не існує</string>
+    <string name="insufficient_material">Матеріал не існує</string>
+
+    <!-- Search -->
+    <string name="search">Пошук</string>
+    <string name="nothing_found">Нічого не знайдено</string>
+
+    <!-- Settings -->
+    <string name="general">Загальні</string>
+    <string name="home_period">Період головної сторінки</string>
+    <string name="quick_navigation">Швидка навігація</string>
+    <string name="week">Тиждень</string>
+    <string name="dekade">10 днів</string>
+    <string name="fortnight">2 тижні</string>
+    <string name="month">Місяць</string>
+    <string name="settings">Налаштування</string>
+    <string name="add_new">+ Додати</string>
+    <string name="components">Компоненти</string>
+    <string name="structures">Структури</string>
+    <string name="materials">Матеріали</string>
+    <string name="hints">Підказки</string>
+    <string name="clinics">Клініки</string>
+    <string name="doctors">Лікарі</string>
+    <string name="name">Назва</string>
+
+    <!-- Structure -->
+    <string name="symbol">Позначка</string>
+    <string name="single_character_only">Лише один символ</string>
+    <string name="invalid_symbol">Недопустима позначка</string>
+
+    <!-- Material -->
+    <string name="color">Колір</string>
+    <string name="hex_format">Шістнадцятковий формат</string>
+    <string name="invalid_color">Недопустимий формат</string>
+
+    <!-- Hint -->
+    <string name="hint">Підказка</string>
+</resources>
